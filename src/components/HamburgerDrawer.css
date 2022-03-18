@@ -1,0 +1,17 @@
+.language-selection {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.language-selection > button {
+  border: 1px solid gray;
+  border-radius: 4px;
+  width: 80px;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #303036;
+  cursor: pointer;
+  color: white;
+}
