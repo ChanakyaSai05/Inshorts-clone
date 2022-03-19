@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function TemporaryDrawer() {
+export default function TemporaryDrawer({ setCategory }) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     // top: false,
@@ -82,7 +82,7 @@ export default function TemporaryDrawer() {
           "Science",
           "Automobile",
         ].map((text, index) => (
-          <ListItem button key={text}>
+          <ListItem button key={text} onClick={() => setCategory(text)}>
             {/* <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon> */}
